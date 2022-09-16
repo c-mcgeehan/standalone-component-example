@@ -1,0 +1,20 @@
+{
+	"root": true,
+	"extends": ["prettier", "plugin:@typescript-eslint/eslint-recommended"],
+	"ignorePatterns": ["src/**/*.spec.ts"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": ["./tsconfig.json"]
+	},
+	"plugins": ["prettier", "@typescript-eslint"],
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "error",
+		"eqeqeq": "error",
+		"no-unreachable": "error",
+		"@typescript-eslint/no-unsafe-call": "error",
+		"@typescript-eslint/no-unsafe-member-access": "error",
+		"@typescript-eslint/no-unsafe-argument": "error",
+		"@typescript-eslint/no-unsafe-assignment": "error",
+		"prettier/prettier": ["error"]
+	}
+}
